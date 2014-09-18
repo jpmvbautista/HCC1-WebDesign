@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- the doctype declaration or DTD tells the browser what exact type of HTML/XHTML code you are using -->
+
+<html  xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>About Us</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!--Javascript Typing Code-->
+<script type='text/javascript'>
+var index = 0;
+var text = 'This page was created by Niamh White, Joanna Bautista and Peter Barry. It was set up in October 2012 as part of our web design project. We all love chocolates and that is why we made this page. Feel free to explore this website. We hope you like it.Thanks!';
+// Here you can put in the text you want to make it type.
+function type()
+{
+document.getElementById('screen1').innerHTML += text.charAt(index);
+index += 1;
+var t = setTimeout('type()',50);
+// The time taken for each character here is 100ms. You can change it if you want.
+}
+</script>
+
+</head>
+
+<body onload='type()'>
+<div id="wrapper">
+	<div id="header"></div>
+	<div id="sidebar">
+	<br />
+		<center>
+
+		<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var month = currentTime.getMonth() + 1
+var day = currentTime.getDate()
+var year = currentTime.getFullYear()
+document.write(month + "/" + day + "/" + year)
+//-->
+</script>
+<br />
+<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var hours = currentTime.getHours()
+var minutes = currentTime.getMinutes()
+if (minutes < 10){
+minutes = "0" + minutes
+}
+document.write(hours + ":" + minutes + " ")
+if(hours > 11){
+document.write("PM")
+} else {
+document.write("AM")
+}
+//-->
+</script>
+		
+</center>
+
+	<center>
+	<ul id="menu-css">  
+	<li><img src="doughnut.png" alt="doughnut" style="max-width:95%;border:3px; solid black;"/></li>
+    <li><br /></li>
+	<li style="margin-bottom: 15px;"><a href="homepage.html">Home</a></li>  
+    <li style="margin-bottom: 15px;"><a href="aboutus.html">About Us</a></li>  
+    <li style="margin-bottom: 15px;"><a href="categories.html">Categories</a></li>  
+    <li style="margin-bottom: 15px;"><a href="ordernow.html">Order Now</a></li>  
+</ul> </center> </div>
+		<div id="content"> 
+		<br />
+		<center>
+		
+		<img src="hipic.gif" alt="hello"/> 
+		<img src="ilove.gif" alt="ilove"/>
+		<h1>Welcome to our Website! </h1>
+		<br />
+		<div id='screen1'></div>
+
+		</center>
+
+</div>
+</div>
+</body>
+
+</html>

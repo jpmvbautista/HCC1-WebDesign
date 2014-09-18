@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- the doctype declaration or DTD tells the browser what exact type of HTML/XHTML code you are using -->
+
+<html  xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NPJ'S Homepage</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<style type="text/css">
+
+<!--
+/* Slideshow CSS internal */
+.slideshow {
+	font-family:Arial, Helvetica, sans-serif;
+	width:500px;
+	height:600px;
+	overflow:hidden;
+	background:transparent;
+	color:transparent;
+	border:2px solid transparent;
+}
+.slideshow > ul {
+	margin: 0;
+	padding: 0;
+}
+.slideshow > ul > li {
+	display:inline;
+	margin:0px;
+	padding:0px;
+	font-size:14px;
+	margin-right: -1px;
+}
+.slideshow > ul > li > div {
+  display: none;
+  text-decoration: none;
+  float:left;
+}
+.slideshow > ul > li > div > p {
+  font-size:14px;
+  text-align:center;
+  padding:10px 0px 0px 0px;
+  margin:0px;
+  color:black;
+}
+.slideshow > ul > li > div > a > img {
+	border:2px solid #FFFFFF;
+	width:500px;
+}
+.slideshow  > ul > li > img {
+	border:2px solid #FFFFFF;
+	margin:0px;
+	padding:0px;
+	width:100px;
+	height:100px;
+}
+/* Shows slides when mouse pointer is over a thumbnail image */
+.slideshow > ul > li:hover > div {
+	display: block;
+}
+/* Highlights the thumbnail image when mouse pointer is over it */
+.slideshow > ul > li:hover > img {
+	border-color:#FF6600;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header"></div>
+	<div id="sidebar">
+	<br />	
+	<center>
+
+	<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var month = currentTime.getMonth() + 1
+var day = currentTime.getDate()
+var year = currentTime.getFullYear()
+document.write(month + "/" + day + "/" + year)
+//-->
+</script>
+<br />
+<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var hours = currentTime.getHours()
+var minutes = currentTime.getMinutes()
+if (minutes < 10){
+minutes = "0" + minutes
+}
+document.write(hours + ":" + minutes + " ")
+if(hours > 11){
+document.write("PM")
+} else {
+document.write("AM")
+}
+//-->
+</script>
+	
+	
+</center>
+
+	<center>
+	<ul id="menu-css">  
+	<li><img src="doughnut.png" alt="doughnut" style="max-width:95%;border:3px; solid black;"/></li>
+    <li><br /></li>
+	<li style="margin-bottom: 15px;"><a href="homepage.html">Home</a></li>  
+    <li style="margin-bottom: 15px;"><a href="aboutus.html">About Us</a></li>  
+    <li style="margin-bottom: 15px;"><a href="categories.html">Categories</a></li>  
+    <li style="margin-bottom: 15px;"><a href="ordernow.html">Order Now</a></li>  
+</ul> 
+
+
+</center> </div>
+	<!--insert contents here-->
+	<div id="content"> 
+	<center>
+	<p><b>Chocolate is the world's perfect food!</b></p>
+	<!-- 
+	The slideshow DIV block. 
+	Create multiple instances to create multiple slideshows in a single page 
+-->
+<div class="slideshow">
+    <ul>
+        <li>
+            <img src="choco1.jpg" alt="chocolate" />
+            <!-- 
+            	The slide contents inside DIV. 
+                Put anything you like to show.
+            -->
+            <div>
+                <a href="choco1.jpg" title="Click to see full image" target="_blank">
+                    <img src="choco1.jpg" alt="Chocolate 1" />
+                </a>
+                <p>A day without chocolate is a day without sunshine.</p>
+            </div>
+        </li>
+        <li>
+            <img src="choco2.jpg" alt="chocolate" />
+            <div>
+                <a href="choco2.jpg" title="Click to see full image" target="_blank">
+                    <img src="choco2.jpg" alt="Chocolate 2" />
+                </a>
+                <p>The word “chocolate” comes from the Aztec word, “Xocolatl”, which ironically means “bitter water”.</p>
+            </div>
+        </li>
+        <li>
+            <img src="choco3.jpg" alt="chocolate" />
+            <div>
+                <a href="choco3.jpg" title="Click to see full image" target="_blank">
+                    <img src="choco3.jpg" alt="Chocolate 3" />
+                </a>
+                <p>Dark chocolate increases blood flow to the brain as well as to the heart, so it can help improve cognitive function. Dark chocolate also helps reduce your risk of stroke. </p>
+            </div>
+        </li>
+        <li>
+            <img src="choco4.jpg" alt="chocolate" />
+            <div>
+                <a href="choco4.jpg" title="Click to see full image" target="_blank">
+                    <img src="choco4.jpg" alt="Chocolate 4" />
+                </a>
+            </div>
+        </li>
+    </ul>
+</div>
+	
+	</center>
+	
+	</div>
+</div>
+</body>
+
+</html>

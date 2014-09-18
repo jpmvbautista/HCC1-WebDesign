@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- the doctype declaration or DTD tells the browser what exact type of HTML/XHTML code you are using -->
+
+<html  xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Welcome to NPJ's Handmade Chocolates</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+			
+			<script language="JavaScript" type="text/javascript">
+
+			function validateForm(form){
+				
+			var fNm = form.fname.value;
+			var eMl = form.email.value;
+			var apos=eMl.indexOf("@");
+			var dotpos=eMl.lastIndexOf(".");
+				
+			  if (fNm == "" || fNm == null){
+			    alert( "Please enter your name." );
+			    form.fname.focus();
+			    return false;
+			  }
+			  else if(eMl == ""  || eMl == null){
+				alert( "Please enter your email." );
+			    form.email.focus();
+			    return false;
+			  }
+			  else if(apos&lt;1||dotpos-apos&lt;2){
+			    alert( "Not a valid email." );
+			    form.email.focus();
+			    return false;
+			  }
+			  else{
+			  	return true;
+			  }
+			
+			}
+			</script>
+			
+</head>
+
+<body>
+
+
+<div id="wrapper">
+		<div id="header"></div>
+		<div id="sidebar">
+			<br />
+			<center>
+			<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var month = currentTime.getMonth() + 1
+var day = currentTime.getDate()
+var year = currentTime.getFullYear()
+document.write(month + "/" + day + "/" + year)
+//-->
+</script>
+<br />
+<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var hours = currentTime.getHours()
+var minutes = currentTime.getMinutes()
+if (minutes < 10){
+minutes = "0" + minutes
+}
+document.write(hours + ":" + minutes + " ")
+if(hours > 11){
+document.write("PM")
+} else {
+document.write("AM")
+}
+//-->
+</script>
+				<ul id="menu-css"> 
+	<li><img src="doughnut.png" alt="doughnut" style="max-width:95%;border:3px; solid black;"/></li>
+    <li><br /></li>
+		<!--This is the navigation list on the sidebar-->
+	<li style="margin-bottom: 15px;"><a href="homepage.html">Home</a></li>  
+    <li style="margin-bottom: 15px;"><a href="aboutus.html">About Us</a></li>  
+    <li style="margin-bottom: 15px;"><a href="categories.html">Categories</a></li>  
+    <li style="margin-bottom: 15px;"><a href="ordernow.html">Order Now</a></li>
+			
+	</ul> </center> </div>
+
+	<div id="content"> <form method = "post"  action="mailto: joannapmvbautista@hotmail.com"/>
+	<!--insert contents here-->
+	<center>
+	<br />
+	<!--table starts here-->
+	<table border="0">
+	<caption style="color:black"><b>Order Form</b><br />
+	<i>Fill this form out and we will email you back with an invoice.</i><br /> <br /></caption> 
+	<tr>	<td><label>First Name:</label></td>		<td><input name = "fname" type = "text" tabindex="1" size = "25" /></td>	</tr>
+	<tr>	<td><label>Surname:</label></td>		<td><input name = "sname" type = "text" size = "25" /></td>	</tr>
+	<tr>	<td><label>Gender:</label></td>			<td><input type="radio" name="gender" value="male"/>Male <input type="radio" name="gender" value="Female" checked="checked"/>Female </td>	</tr>
+	<tr>	<td><label>Email:</label></td>			<td><input name = "email" type = "text" size = "25"/></td>	</tr>
+	<tr>	<td><label>Category:</label></td>		<td>Sugarfree Truffles:  <input type = "radio" name = "cat" value = "a" />
+														Gourmet Chocolates:  <input type = "radio" name = "cat" value = "b" />
+														Chocolate Lovers Assortment:<input type = "radio" name = "cat" value = "c" /> </td></tr>
+	<tr>	<td><label>Quantity:</label></td>		<td><input name = "qnt" type = "text" /></td>	</tr>															
+	<tr>	<td><label>Select Country:</label></td>	<td  class="mytd"> <select>
+										<option>Ireland</option>
+										<option>England</option>
+										<option>France</option>
+										<option>Italy</option>
+										<option>Germany</option>
+										<option>Spain</option>
+											</select></td> </tr>	
+    <tr>	<td><label>Address line 1:</label></td>  		<td><input name="Add1" type="text" size = "25" /></td></tr>
+    <tr>	<td><label>Address line 2:</label></td>  		<td><input name="Add2" type="text" size = "25" /></td></tr>
+	<tr>	<td><label>Card Number:</label></td>	<td><input name = "cnum" type = "text" /></td>	</tr>
+	<tr>	<td><label>Card Code Number:</label></td>	<td><input name = "cnum" type = "text" size = "4"/></td>	</tr>
+	<tr> <td> 
+		<label><b>Any Suggestions:</b></label></td> 
+		
+		<td><center><textarea rows = "5" cols = "35" name = "comments"></textarea></center> <br /></td>
+	</tr>
+	</table>
+		<center><input type="submit" value="Submit"/>
+		<input type = "reset" /></center>
+		
+			</center>
+			
+	</div>
+</div>
+</body>
+
+</html>
